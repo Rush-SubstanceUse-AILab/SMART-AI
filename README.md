@@ -1,4 +1,4 @@
-# SMART-AI
+# Substance Misuse Algorithm for Referral to Treatment using Artificial Intelligence (SMART-AI)
 
 Steps for execution
 1) Clone the repo
