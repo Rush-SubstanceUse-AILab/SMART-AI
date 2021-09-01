@@ -5,9 +5,9 @@ Introduction
 
 Steps for execution
 1) Clone the repo
-2) Open the config file to provide the data and model location
-3) execution command from/inside the CODE folder -> python3 ml_prediction.py config.cfg
-4) result will be output in the same working directory
+2) Open the config file inside the CODE folder to provide the data and model location
+3) execution command inside the CODE folder -> python3 ml_prediction.py config.cfg
+4) result will output in the same working directory
 
 
 Libraries
