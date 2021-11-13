@@ -10,7 +10,7 @@ Premilinary data processing steps:
 
 cTAKES:
 
-Download cTAKES from https://ctakes.apache.org/downloads.cgi cTAKES comes with default dictionary, this dictionary can also be cutomized creating own version. Our dictionary consists of rxnorms and snomedCT but default dictionary also works well Process the input data using cTAKES, this will crete .txt files with CUIs which will be input data to the model 
+Download cTAKES from https://ctakes.apache.org/downloads.cgi cTAKES comes with default dictionary, this dictionary can also be cutomized creating own version. Our dictionary consists of rxnorms, snomedCT and drugbank but default dictionary also works well. Process the input data using cTAKES, this will create xmi file. CUIS from the xmi file can be extracted to create a .txt file, which will be input data to the model. 
 
 Model:
 
