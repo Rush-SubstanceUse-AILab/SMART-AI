@@ -19,7 +19,7 @@ Modify the directory location to the path where the actual data and model reside
 From the CODE folder, execute the command: python3 ml_prediction.py config.cfg
 Results will output in the same working directory, with a list of the file names and their prediction probabilities, prediction outcome(binary 0 for no misue and 1 for misuse) for each misuse status. The cut point is kept at 0.05 but can be changed easily from the config file.
 
-Libraries
+Libraries:
 
 python3
 pickle
