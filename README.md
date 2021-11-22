@@ -13,16 +13,15 @@ Model:
 The model can run in a batch of patients data or just a single patient file. Keep the data inside an arbitrary folder with cuis for each patient in a .txt file in both cases. Provide the directory to this dataset in the config file.
 
 Steps for model execution
-Clone the repo or download it from the repo directory
-Open the config file inside the CODE folder, which contains data and model directory location
-Modify the directory location to the path where the actual data and model resides
-From the CODE folder, execute the command: python3 ml_prediction.py config.cfg
-Results will output in the same working directory, with a list of the file names and their prediction probabilities, prediction outcome(binary 0 for no misue and 1 for misuse) for each misuse status. The cut point is kept at 0.05 but can be changed easily from the config file.
+1) Clone the repo or download it from the repo directory
+2) Open the config file inside the CODE folder, which contains data and model directory location
+3) Modify the directory location to the path where the actual data and model resides
+4) From the CODE folder, execute the command: python3 ml_prediction.py config.cfg
+5) Results will output in the same working directory, with a list of the file names and their prediction probabilities, prediction outcome(binary 0 for no misue and 1 for misuse) for each misuse status. The cut point is kept at 0.05 but can be changed easily from the config file.
 
 Libraries:
-
-python3
-pickle
-PyTorch > 1.13
-pandas
-NumPy
+1) python > 3.0
+2) pickle
+3) PyTorch > 1.13
+4) pandas
+5) NumPy
