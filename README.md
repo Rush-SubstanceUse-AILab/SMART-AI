@@ -10,15 +10,18 @@ Premilinary data processing steps:
 
 cTAKES:
 
-Download cTAKES from https://ctakes.apache.org/downloads.cgi cTAKES comes with default dictionary, this dictionary can also be cutomized creating own version. Our dictionary consists of rxnorms, snomedCT and drugbank but default dictionary also works well. Process the input data using cTAKES, this will create xmi file. CUIS from the xmi file can be extracted to create a .txt file, which will be input data to the model. 
+Download cTAKES from https://ctakes.apache.org/downloads.cgi cTAKES comes with default dictionary, this dictionary can also be cutomized creating own version. Our dictionary consists of rxnorms and snomedCT, but default dictionary also works well. Process the input data, first 24hr of clinical notes using cTAKES, this will create xmi files. The xmi files will contain CUIS which can be extracted to create a .txt file. The .txt file will be input data to the model. 
 
 Model:
 
+The model can run in a batch of patient data or just a single patient file. In both the cases, the data should kept inside a folder with cuis for each patient in a .txt file. This directory to this folder must be given in the config file. 
+
 Steps for model execution
-1) Clone the repo
-2) Open the config file inside the CODE folder to provide the data and model location
-3) execution command inside the CODE folder -> python3 ml_prediction.py config.cfg
-4) result will output in the same working directory
+1) Clone the repo or download from the repo directory
+2) Open the config file inside the CODE folder, which contains data and model directory location
+3) Modify the directory location to the path where the actual data and model resides
+3) From the CODE folder execution the command: python3 ml_prediction.py config.cfg (this step scan also be done by loading the ml_prediction.py script in an IDE)
+4) Results will output in the same working directory, with a list of file name and their prediction probability, prediction outcome(binary 0 for no misue and 1 for misuse) for each misuse status. The cut point can also be changed from the config file, default cutpoint is 0.05. 
 
 
 Libraries
